@@ -1,0 +1,63 @@
+.slider {
+  background-image: linear-gradient(
+      rgba(16, 29, 44, 0.93),
+      rgba(16, 29, 44, 0.93)
+    ),
+    url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-grow: 6;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    img {
+      width: 200px;
+    }
+  }
+  .header-1 {
+    padding: 30px 0 0 100px;
+    justify-content: flex-start;
+
+    h3 {
+      color: rgb(198, 153, 99);
+      line-height: 1.5;
+    }
+    h1 {
+      color: #fff;
+      line-height: 2;
+      font-weight: 400;
+    }
+    button {
+      color: #fff;
+      background-color: rgb(198, 153, 99);
+      padding: 10px 20px;
+      font-weight: 500;
+      border: none;
+    }
+    button:hover {
+      border: none;
+      background-color: rgb(78, 62, 44);
+    }
+  }
+}
+@media (max-width: 700px) {
+  .slider {
+    flex-grow: 0;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    flex-grow: 0;
+    .header-1 {
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 1000vh;
+  background-color: #c69963;
+  width: 75px;
+
+  div {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+  }
+}
