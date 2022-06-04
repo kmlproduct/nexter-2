@@ -9,11 +9,6 @@ body {
   background-color: #fff;
 }
 
-.container {
-  display: flex;
-  flex-grow: 10;
-}
-
 .container-2 {
   display: flex;
   flex-grow: 10;
@@ -25,12 +20,13 @@ body {
   }
 }
 .menu {
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  padding: 15px;
-  height: 1000vh;
   background-color: #c69963;
-  width: 75px;
+  padding: 15px;
 }
 .menu div {
   background-color: #fff;
@@ -52,13 +48,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 .slider .logo img {
   width: 200px;
 }
 .slider .header-1 {
-  padding: 30px 0 0 100px;
+  padding: 30px 0;
   justify-content: flex-start;
 }
 .slider .header-1 h3 {
@@ -85,10 +81,12 @@ body {
 @media (max-width: 700px) {
   .slider {
     flex-grow: 0;
+    height: 60vh;
   }
 }
 @media (max-width: 600px) {
   .slider {
+    height: 43vh;
     flex-grow: 0;
   }
   .slider .header-1 h1 {
@@ -143,6 +141,22 @@ body {
   .footer .imgs img {
     width: 40px;
   }
+  .footer .seen {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  .footer .seen span::before {
+    width: 80%;
+    top: 10px;
+    right: 152px;
+  }
+  .footer .seen span::after {
+    width: 80%;
+    top: 10px;
+    left: 152px;
+  }
 }
 .realtors {
   display: flex;
@@ -191,6 +205,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  .realtors {
+    height: 60vh;
+  }
   .realtors h2 {
     font-size: 10px;
   }
@@ -200,6 +217,7 @@ body {
 }
 @media (max-width: 600px) {
   .realtors {
+    height: 43vh;
     flex-grow: 0;
   }
   .realtors h2 {
@@ -208,4 +226,25 @@ body {
   .realtors .realtors-person .person h3 {
     font-size: 10px;
   }
+}
+.features {
+  padding: 66px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  justify-content: center;
+}
+.features .feature {
+  display: flex;
+  flex-direction: column;
+  width: 329px;
+  padding: 20px;
+  line-height: 2;
+}
+.features .feature h2 {
+  color: #54483a;
+}
+.features .feature div {
+  font-weight: 400;
+  color: #54483a;
 }/*# sourceMappingURL=main.css.map */

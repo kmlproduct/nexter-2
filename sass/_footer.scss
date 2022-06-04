@@ -55,5 +55,22 @@
         width: 40px;
       }
     }
+    .seen {
+      text-align: center;
+      color: #fff;
+      position: relative;
+      padding-bottom: 20px;
+
+      span::before {
+        width: 80%;
+        top: 10px;
+        right: 152px;
+      }
+      span::after {
+        width: 80%;
+        top: 10px;
+        left: 152px;
+      }
+    }
   }
 }
