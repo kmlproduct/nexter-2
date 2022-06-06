@@ -7,7 +7,10 @@ body {
   font-family: Nunito, sans-serif;
   background-color: #fff;
 }
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .container-2 {
   display: flex;
   flex-grow: 10;

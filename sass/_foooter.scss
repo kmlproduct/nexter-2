@@ -1,0 +1,49 @@
+.foooter {
+  padding: 100px;
+  background-color: #101d2c;
+  ul {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+      padding: 10px;
+      flex-grow: 1;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      transition: all 0.2s;
+      width: 25%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2a3036;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  div {
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 30px 100px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .foooter {
+    padding: 60px;
+    ul {
+      li {
+        font-size: 10px;
+        line-height: 1.5;
+      }
+    }
+    div {
+      padding: 30px;
+      line-height: 1.5;
+    }
+  }
+}

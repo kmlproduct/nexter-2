@@ -1,23 +1,38 @@
 .features {
-  padding: 66px;
+  padding: 100px;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 10px;
-  justify-content: center;
+  gap: 50px;
 
   .feature {
-    display: flex;
-    flex-direction: column;
-    width: 329px;
-    padding: 20px;
+    flex-grow: 1;
+    width: 25%;
     line-height: 2;
 
     h2 {
       color: #54483a;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
     }
     div {
-      font-weight: 400;
+      font-weight: 300;
       color: #54483a;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .features {
+    .feature {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 524px) {
+  .features {
+    padding: 60px;
+    .feature {
+      width: 100%;
     }
   }
 }

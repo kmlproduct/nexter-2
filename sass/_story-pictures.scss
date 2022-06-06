@@ -1,0 +1,114 @@
+.story-pictures {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    flex-grow: 1;
+    height: 500px;
+    width: 50%;
+  }
+  .story-imgs {
+    background-image: linear-gradient(
+        rgba(191, 238, 22, 0.363),
+        rgba(76, 121, 82, 0.164)
+      ),
+      url(../img/back.jpg);
+    position: relative;
+    .story-1 {
+      width: 300px;
+      position: absolute;
+      top: 40%;
+      right: 100px;
+    }
+    .story-2 {
+      width: 300px;
+      position: absolute;
+      top: 60%;
+      right: -60px;
+    }
+  }
+  .story-content {
+    background-color: #f9f7f6;
+    padding: 70px 70px 0 100px;
+    .stroy-content-parent {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        color: #c69963;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-style: italic;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #6d5d4b;
+        font-weight: 300;
+        line-height: 1.6;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      button {
+        color: #fff;
+        background-color: rgb(198, 153, 99);
+        padding: 10px 20px;
+        font-weight: 500;
+        border: none;
+        width: 200px;
+        &:hover {
+          background-color: rgb(163, 102, 28);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .story-pictures {
+    .story-imgs {
+      .story-1 {
+        width: 260px;
+        top: 40%;
+        right: 50px;
+      }
+      .story-2 {
+        width: 253px;
+        top: 60%;
+        right: -60px;
+      }
+    }
+    .story-content {
+      padding: 33px 8px 0 70px;
+    }
+  }
+}
+@media (max-width: 824px) {
+  .story-pictures {
+    flex-direction: column;
+    .story-imgs {
+      width: 100%;
+      .story-1 {
+        width: 260px;
+        top: 40%;
+        right: 90px;
+      }
+      .story-2 {
+        width: 253px;
+        top: 60%;
+        right: 20px;
+      }
+    }
+  }
+  .story-content {
+    width: 100%;
+  }
+}
+@media (max-width: 824px) {
+  .story-pictures {
+    padding: 20px;
+  }
+}
